@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Slabo 27px", serif; 
+
+}
+.logo{
+color: rgb(236, 164, 30);
+font-size: 20px;
+font-weight: bolder;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    position: fixed;
+    background-color: snow;
+    width: 100vw;
+}
+
+ul{
+    display: none;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: orange;
+}
+
+label div{
+    background-color: rgb(219, 149, 21);
+    padding: 2px;
+    width: 20px;
+    margin-top: 4px;
+}
+
+#menu:checked~ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 46px;
+    bottom: 0px;
+    left: 0;
+    right: 150px;
+    background-color: black;
+}
+#menu:checked~label .middle-bar{
+    display: none;
+}
+
+#menu:checked~label .top-bar{
+    transform: rotate(45deg) translate(7px);
+    transition: 1s;
+}
+
+#menu:checked~label .bottom-bar{
+    transform: rotate(-45dg) translateY(-6px);
+    transition: 1s;
+}
+.hero-section{
+    background-image: url(images/fried-bread-bun-wicker-basket.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    
+    
+}
+.hero-section div{
+    text-align: center;
+    padding-top: 40px;
+    background: rgba(15, 13, 13, 0.4);
+    height: 400px;
+    
+
+}
+.hero-section h3{   
+    color:rgba(30, 210, 126, 0.785);
+    font-size: 45px;
+    padding: 50px;
+    animation-name:slideIn;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+.hero-section p{
+    width: 200px;
+    /* margin: 0 auto; */
+    margin:0 auto;
+    padding-block: 15px;
+    font-size: 25px;
+    color:antiquewhite;
+    
+    
+}
+.hero-section button{
+    width: 180px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(30, 210, 126, 0.785);
+    color: antiquewhite;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 30px;
+    
+    
+}
+.main-section {
+    background-image: url(images/topviewbread.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-block: 60px;
+
+    
+   
+}
+
+.main-section h2{
+    text-align: center;
+        
+}
+    
+.main-sub-section p{
+    width: 100px;
+    margin: 0 auto;
+    font-size: 18px;
+
+
+}
+ 
+
+.main-sub-section .sub-section-box1, .sub-section-box2, .sub-section-box3{    
+color: black;
+    background-color: snow;
+    width: 300px;
+    padding: 13px;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(128, 125, 125);
+    animation-name: index;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    margin-top: 10px;
+
+
+}
+    
+    
+/*     
+@keyframes index{
+    0%{
+        margin-left: -260px;
+        transform: 1s
+    }
+    50%{
+        color: blue;
+        background-color: snow;
+    }
+    100%{
+        margin-right: 200px;
+    } */
+/* } */
+
+  .main-section h2{
+    color: snow;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }  
+  .main-heading{
+    background-color: rgb(218, 164, 95);
+    padding-block: 40px;
+  }
+  .main-heading h2{
+    text-align: center;
+    padding-block: 25px;
+  }  
+ .main-sub-heading,.arrange,.arrange1{
+    width: 700px;
+
+ }   
+
+.headingbox1{
+    color: black;
+    background-color: snow;
+    width: 330px;
+    padding: 20px;
+    margin: 19px auto;
+    text-align: left;
+    padding-bottom: px;
+
+}
+.headingbox1 p{
+    padding-block: 10px;
+
+}
+.headingbox1 img{
+    padding-bottom: 15px;
+    border-radius: 23px;
+}
+.headingbox1 button{
+    color: snow;
+    background-color: black;
+    border-radius: 10px;
+    width: 120px;
+    height: 29px;
+    padding-block: 5px;
+}
+.headingbox1 span{
+    color: rgb(231, 98, 9);
+    font-size: 25px;
+}
+.headingbox1 button:hover{
+    background-color: slategray;
+    width: 100px;
+    transition: 1s;
+}    
+.section-heading{
+background-image:url(images/volt.jpg);
+background-size: cover;
+background-position: center 50%;
+color: white;
+height: 400px;
+padding-block: 40px;
+
+}
+.txt input{
+    width: 50%;
+    padding: 13px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.section-heading p{
+    padding-block: 10px;
+    font-size: 25px;
+}
+.txt input:nth-child(2){
+    background-color: peachpuff;
+}
+.txt inut:nth-child(2):hover{
+    background-color: rgb(172,68,8);
+    color: snow;
+    transition: 1s;
+}
+.footer{
+    background-color: black;
+    color: snow;
+    padding-block: 40px;
+    padding-inline: 20px;
+}
+.footer-header{
+    text-align: center;
+}
+.footer-link p{
+    font-size: 20px;
+    padding-block: 15px;
+}
+.footer-link p:hover{
+    color: rgb(255, 68, 0, 0.863);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-link h2{
+    padding-block: 30px;
+}
+.icons svg{
+    color: rgb(255, 115, 0);
+    cursor: pointer;
+}
+@media screen and (min-width:768px) {
+    label{
+        display: none;
+    }
+    nav{
+        padding-inline: 20px;
+        padding: 20px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .hero-section{
+        height: 100vh;
+    }
+    .hero-section div{
+        padding-top: 85px;
+        height: 100vh;
+    }
+    .hero-section h3{
+        font-size: 60px;
+    }
+    .hero-section p{
+        font-size: 40px;
+        width: 50%;
+        padding-block: 40px;
+    }
+    .hero-section button{
+        width: 250px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .sub-section-box1,.sub-section-box2,.sub-section-box3{
+        width: 350px;
+    }
+    .main-sub-section{
+        display: flex;
+        justify-content: space-around;
+        margin-inline-end: 50px;
+    }
+    .main-section h2{
+        padding-block: 30px;
+        font-size: 50px;
+        /* margin-bottom: 50px; */
+    }
+    .main-sub-section p{
+        /* padding-block: 12px; */
+        font-size: 30px;
+    }
+    .arrange1, .headingbox1{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 70px;
+        
+    }
+    .txt input{
+        display: flex;
+        width: 500px;
+        text-align: center;
+        margin: 40px;
+        gap: 70px;
+    }
+    .txt{
+        padding-left: 620px;
+        
+
+    }
+
+    .section-heading h2{
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+    .section-heading,.sec-heading p{
+        text-align: center;
+    }
+    .txt p{
+        text-align: center;
+    }
+    .note{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+
+    }
+    
+
+    }
+

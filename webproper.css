@@ -134,6 +134,8 @@ label div{
 
 .main-section h2{
     text-align: center;
+    
+    
         
 }
     
@@ -191,8 +193,8 @@ color: black;
     text-align: center;
     padding-block: 25px;
   }  
- .main-sub-heading,.arrange,.arrange1{
-    width: 700px;
+ .main-sub-heading{
+    width: ;
 
  }   
 
@@ -203,7 +205,7 @@ color: black;
     padding: 20px;
     margin: 19px auto;
     text-align: left;
-    padding-bottom: px;
+    
 
 }
 .headingbox1 p{
@@ -213,6 +215,7 @@ color: black;
 .headingbox1 img{
     padding-bottom: 15px;
     border-radius: 23px;
+    width: 250px;
 }
 .headingbox1 button{
     color: snow;
@@ -236,6 +239,7 @@ background-image:url(images/volt.jpg);
 background-size: cover;
 background-position: center 50%;
 color: white;
+width: 100vw;
 height: 400px;
 padding-block: 40px;
 
@@ -254,7 +258,7 @@ padding-block: 40px;
 .txt input:nth-child(2){
     background-color: peachpuff;
 }
-.txt inut:nth-child(2):hover{
+.txt input:nth-child(2):hover{
     background-color: rgb(172,68,8);
     color: snow;
     transition: 1s;
@@ -305,10 +309,12 @@ padding-block: 40px;
         height: 100vh;
     }
     .hero-section h3{
-        font-size: 60px;
+        font-size: 50px;
+
+        
     }
     .hero-section p{
-        font-size: 40px;
+        font-size: 30px;
         width: 50%;
         padding-block: 40px;
     }
@@ -323,56 +329,62 @@ padding-block: 40px;
     .main-sub-section{
         display: flex;
         justify-content: space-around;
-        margin-inline-end: 50px;
+        
     }
     .main-section h2{
         padding-block: 30px;
         font-size: 50px;
-        /* margin-bottom: 50px; */
+        margin-bottom: 50px;
     }
     .main-sub-section p{
         /* padding-block: 12px; */
         font-size: 30px;
     }
+    .arrange, .headingbox1{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 70px;
+
+           
+    }
     .arrange1, .headingbox1{
         display: flex;
         justify-content: space-between;
         margin-left: 70px;
-        
+    }
+    .txt{
+        text-align: center;
+        width: 100vw;
     }
     .txt input{
         display: flex;
-        width: 500px;
+        width: 23%;
         text-align: center;
-        margin: 40px;
+        margin: 7px auto;
         gap: 70px;
-    }
-    .txt{
-        padding-left: 620px;
+    
         
-
     }
-
+        
     .section-heading h2{
         font-size: 40px;
         padding-bottom: 30px;
+        
+           
     }
-    .section-heading,.sec-heading p{
-        text-align: center;
-    }
-    .txt p{
-        text-align: center;
-    }
+.section-heading p{
+    text-align: center;
+    padding-block: 20px;
+    font-size: large;
+}
     .note{
         display: flex;
         justify-content: space-around;
+        
     }
     .footer h1{
         font-size: 40px;
         margin-bottom: 20px;
-
     }
-    
-
     }
 
